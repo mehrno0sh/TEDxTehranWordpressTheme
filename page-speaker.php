@@ -1,9 +1,11 @@
 ﻿<?php /*
   Template Name: Speaker
-Template Post Type: page
+Template Post Type: page, post
  */ ?>
 
 <?php get_header(); ?>
+
+<?php while (have_posts()) : the_post(); ?>
 
     <!-- Salutation -->
     <section class="section-white section-salutation volunteer">
@@ -12,7 +14,7 @@ Template Post Type: page
                 <div class="col-xs-12 col-md-6 WhyTedxText">
                     <div class="text-salutation">
                         <h1 class="title-section-left">
-                            Kiana Shafiei
+                            <?php the_title(); ?>
                             <div class="slogan">
                                 <strong>(Pianist and Musicologist)</strong>
                             </div>
@@ -54,10 +56,13 @@ Template Post Type: page
                         professor Gagik Babayan and later on with Peyman Yazdanian.
                     </p>
                 </div>
-                <div id="container-para" class="col-md-6 col-xs-12"><img src="<?php bloginfo('template_directory'); ?>/images/speakers/kianashafiei.jpg"
-                                                                         class="img-responsive spk-photo"></div>
+                <div id="container-para" class="col-md-6 col-xs-12"><img
+                        src="<?php bloginfo('template_directory'); ?>/images/speakers/kianashafiei.jpg"
+                        class="img-responsive spk-photo"></div>
             </div>
         </div>
     </section>
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>
