@@ -35,8 +35,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/about.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/all-styles.min.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css"/>
     <link href="<?php bloginfo('template_directory'); ?>/css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.min.css">
