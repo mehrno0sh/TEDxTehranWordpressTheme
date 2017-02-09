@@ -569,5 +569,18 @@
     </div>
 </section>
 <!-- /Quick Answers -->
+<script>
+    $("#btn-scroll-sec").click(function () {
+        $('html,body').animate({
+                scrollTop: $(".second").offset().top
+            },
+            'slow');
+    });
+</script>
+
+<script src="<?php bloginfo('template_directory'); ?>/js/mo.min.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/particles-white.init.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/mo.effect1.init.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/countdown.js" type="text/javascript"></script>
 
 <?php get_footer(); ?>

@@ -7,17 +7,54 @@
             </div>
             <div class="col-sm-4 col-md-4 text-right">
                 <ul class="list-unstyled no-list-style list-inline list-socials">
-                    <li><a href="#demo"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#demo"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#demo"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                    <li><a href="#demo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <?php
+                    $args = array(
+                        'post_type' => 'social-links',
+                        'orderby' => 'menu_order',
+                        'order' => 'ASC'
+                    );
+                    $i = 1;
+                    $custom_query = new WP_Query($args);
+                    while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+                        <li><a href="<?php echo wp_strip_all_tags(get_the_excerpt()); ?>"><i class="fa" aria-hidden="true"></i></a>
+                        </li>
+
+                        <?php $i++; ?>
+                    <?php endwhile; ?>
+
+                    <script type="application/javascript">
+                        $(document).ready(function () {
+                            $(".list-socials a").each(function () {
+                                var href = $(this).attr('href');
+                                if (href.includes('linkedin')) {
+                                    $(this).find('i').addClass('fa-linkedin');
+                                }
+                                else if (href.includes('instagram')) {
+                                    $(this).find('i').addClass('fa-instagram');
+                                }
+                                else if (href.includes('twitter')) {
+                                    $(this).find('i').addClass('fa-twitter');
+                                }
+                                else if (href.includes('flickr')) {
+                                    $(this).find('i').addClass('fa-flickr');
+                                }
+                                else if (href.includes('facebook')) {
+                                    $(this).find('i').addClass('fa-facebook');
+                                }
+                                else {
+                                    $(this).find('i').addClass('fa-linkedin');
+                                }
+                            });
+                        });
+                    </script>
+
                 </ul>
             </div>
         </div>
     </div>
 </footer>
 <!-- /Footer -->
-
 <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
@@ -28,20 +65,8 @@
 </div>
 <!-- /Popup -->
 <!-- JavaScripts -->
-<script src="<?php bloginfo('template_directory');?>/js/plugins.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/js/mo.min.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/js/common.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/js/particles-white.init.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/js/mo.effect1.init.js" type="text/javascript"></script>
-<script src="<?php bloginfo('template_directory');?>/js/countdown.js" type="text/javascript"></script>
-<script>
-    $("#btn-scroll-sec").click(function () {
-        $('html,body').animate({
-                scrollTop: $(".second").offset().top
-            },
-            'slow');
-    });
-</script>
+<script src="<?php bloginfo('template_directory'); ?>/js/plugins.js" type="text/javascript"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/common.js" type="text/javascript"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (d, w, c) {

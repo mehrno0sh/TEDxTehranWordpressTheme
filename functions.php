@@ -39,3 +39,4 @@ function create_social_link()
 add_action('init', 'create_social_link');
 
 
+add_theme_support( 'title-tag' );
