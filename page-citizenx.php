@@ -88,8 +88,4 @@ Template Post Type: page
 </section>
 <!-- /Reviews -->
 
-<!--<script src="--><?php //bloginfo('template_directory'); ?><!--/js/mo.min.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_directory'); ?><!--/js/particles.init.js" type="text/javascript"></script>-->
-<!--<script src="--><?php //bloginfo('template_directory'); ?><!--/js/mo.effect1.init.js" type="text/javascript"></script>-->
-
 <?php get_footer(); ?>
