@@ -1,6 +1,6 @@
 ﻿<?php /*
   Template Name: FAQ
-Template Post Type: post, page, event
+Template Post Type: page
  */ ?>
 
 <?php get_header(); ?>

@@ -1,6 +1,6 @@
 ﻿<?php /*
   Template Name: About Us
-Template Post Type: post, page, event
+Template Post Type: page
  */ ?>
 
 <?php get_header(); ?>
