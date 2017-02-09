@@ -77,23 +77,11 @@ div.container::after {
 .item-join h5 {
 	display: none;
 }
-#abo-fb a:hover + #abt-fb {
-    display: inline;
-	transition: all .2s ease-in-out;
+
+.abo-social a:hover + .abt-social {
+    display: inline !important;
 }
-#abo-tw a:hover + #abt-tw {
-    display: inline;
-}
-#abo-fl a:hover + #abt-fl {
-    display: inline;
-}
-#abo-ig a:hover + #abt-ig {
-    display: inline;
-}
-#abo-in a:hover + #abt-in {
-    display: inline;
-	margin: 0px;
-}
+
 .item-join a:focus {
 	color: #e62b1e
 }
