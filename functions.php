@@ -36,6 +36,7 @@ function create_social_link()
             )
         ));
 }
+
 add_action('init', 'create_social_link');
 
 
@@ -57,4 +58,41 @@ function create_team_members()
 
 add_action('init', 'create_team_members');
 
-add_theme_support( 'title-tag' );
+
+function create_sponsors()
+{
+    register_post_type('sponsors',
+        array(
+            'labels' => array(
+                'name' => __('Sponsors'),
+                'singular_name' => __('Sponsor'),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+            )
+        ));
+}
+
+add_action('init', 'create_sponsors');
+
+function create_press()
+{
+    register_post_type('press',
+        array(
+            'labels' => array(
+                'name' => __('Press'),
+                'singular_name' => __('Press'),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title',
+            )
+        ));
+}
+
+add_action('init', 'create_press');
+
+add_theme_support('title-tag');
