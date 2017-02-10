@@ -2,7 +2,7 @@
 <html lang="en" class="full-height">
 <head>
     <meta charset="utf-8"/>
-<!--    <title>TEDxTehran 2016</title>-->
+    <!--    <title>TEDxTehran 2016</title>-->
 
     <!-- Meta Datas -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,6 +49,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <?php wp_head(); ?>
+
 </head>
 <body>
 <!-- Header -->
@@ -66,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8" style="display: none">
                 <nav class="navbar main-nav">
                     <div class="navbar-header">
                         <button class="navbar-toggle" type="button" data-toggle="collapse"
@@ -105,8 +108,29 @@
                     </div>
                 </nav>
             </div>
+            <div class="col-md-8">
+                <nav class="navbar main-nav">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <?php
+                    // Primary navigation menu.
+                    wp_nav_menu(array(
+                        'container_class' => 'collapse navbar-collapse',
+                        'menu_class' => 'nav navbar-nav',
+                        'theme_location' => 'primary',
+                    ));
+                    ?>
+                </nav>
+            </div>
         </div>
         <!-- /Menu -->
+
     </div>
 </header>
 <!-- /Header --> 
