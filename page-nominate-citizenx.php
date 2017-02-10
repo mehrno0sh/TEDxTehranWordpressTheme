@@ -22,7 +22,7 @@ Template Post Type: page
                 </div>
                 <article class="vid whyTedxVid">
                     <div id="nominate">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/nominate-ct.png" />
+                        <img src="<?php bloginfo('template_directory'); ?>/img/nominate-ct.png" />
                     </div>
                 </article>
             </div>

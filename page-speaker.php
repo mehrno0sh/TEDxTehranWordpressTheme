@@ -57,7 +57,7 @@ Template Post Type: page, post
                     </p>
                 </div>
                 <div id="container-para" class="col-md-6 col-xs-12"><img
-                        src="<?php bloginfo('template_directory'); ?>/images/speakers/kianashafiei.jpg"
+                        src="<?php bloginfo('template_directory'); ?>/img/speakers/kianashafiei.jpg"
                         class="img-responsive spk-photo"></div>
             </div>
         </div>

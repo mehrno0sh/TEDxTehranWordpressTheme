@@ -21,9 +21,9 @@ Template Post Type: page
                     </div>
                 </div>
                 <div id="container-para" class="col-md-6 hidden-xs hidden-sm"><img
-                        src="<?php bloginfo('template_directory'); ?>/images/illustration-contact.svg"
+                        src="<?php bloginfo('template_directory'); ?>/img/illustration-contact.svg"
                         class="guy img-responsive"></div>
-                <!--<img id="ctn-photo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/images/illustration-contact.svg" alt="Contact">-->
+                <!--<img id="ctn-photo" class="img-responsive" src="<?php bloginfo('template_directory'); ?>/img/illustration-contact.svg" alt="Contact">-->
             </div>
         </div>
     </section>
@@ -36,7 +36,7 @@ Template Post Type: page
                 <div class="col-sm-4 col-md-4">
                     <div class="item-contact text-center copy-btn" data-clipboard-action="copy"
                          data-clipboard-target="#cn-mail1">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/icon-mail.svg" alt="Email">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon-mail.svg" alt="Email">
                         <h5 class="item-contact-heading text-uppercase">General Inquiries</h5>
                         <p id="cn-mail1">info@tedxtehran.com</p>
                     </div>
@@ -46,7 +46,7 @@ Template Post Type: page
                 <div class="col-sm-4 col-md-4">
                     <div class="item-contact text-center copy-btn" data-clipboard-action="copy"
                          data-clipboard-target="#cn-mail2">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/icon-mail.svg" alt="Email">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon-mail.svg" alt="Email">
                         <h5 class="item-contact-heading text-uppercase">Volunteer Inquiries</h5>
                         <p id="cn-mail2">volunteer@tedxtehran.com</p>
                     </div>
@@ -56,7 +56,7 @@ Template Post Type: page
                 <div class="col-sm-4 col-md-4">
                     <div class="item-contact text-center copy-btn" data-clipboard-action="copy"
                          data-clipboard-target="#cn-mail3">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/icon-mail.svg" alt="Email">
+                        <img src="<?php bloginfo('template_directory'); ?>/img/icon-mail.svg" alt="Email">
                         <h5 class="item-contact-heading text-uppercase">Press and Media Inquiries</h5>
                         <p>Reza Ghiabi, Licensee and Organizer TEDxTehran</p>
                         <p id="cn-mail3">pr@tedxtehran.com</p>

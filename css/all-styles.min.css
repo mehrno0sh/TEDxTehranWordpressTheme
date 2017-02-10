@@ -23,7 +23,7 @@
 }
 
 .free-started {
-    background-image: url(../images/about-press.svg);
+    background-image: url(../img/about-press.svg);
     background-size: cover;
     background-position: center center;
     padding-top: 76px;
@@ -111,7 +111,7 @@ div.container:after {
 }
 
 .icon-quote {
-    background-image: url(../images/icon-award-citizen.svg);
+    background-image: url(../img/icon-award-citizen.svg);
     display: block;
     height: 65.5px;
     margin-bottom: 30px;
@@ -204,7 +204,7 @@ div.container:after {
 }
 
 .event-header {
-    background-image: url(../images/bg-stats.jpg);
+    background-image: url(../img/bg-stats.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -523,7 +523,7 @@ div.container:after {
 }
 
 .event-team {
-    background-image: url(../images/arrow-bg.svg);
+    background-image: url(../img/arrow-bg.svg);
     background-size: cover;
     background-position: center center;
     padding-top: 76px;
@@ -1132,22 +1132,22 @@ textarea.form-control-style {
 
 .main-slider-yellow {
     background-color: #fee176;
-    background-image: url(../images/clouds.svg)
+    background-image: url(../img/clouds.svg)
 }
 
 .main-slider-blue {
     background-color: #89daf6;
-    background-image: url(../images/clouds-blue.svg)
+    background-image: url(../img/clouds-blue.svg)
 }
 
 .main-slider-black {
     background-color: #31364c;
-    background-image: url(../images/bg-stars.svg)
+    background-image: url(../img/bg-stars.svg)
 }
 
 .main-slider-image {
     background-color: #fff;
-    background-image: url(../images/bg-header.jpg);
+    background-image: url(../img/bg-header.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -1601,7 +1601,7 @@ textarea.form-control-style {
 }
 
 .badge svg {
-    background-image: url(../images/play.svg);
+    background-image: url(../img/play.svg);
     top: 0;
     left: 0
 }
@@ -1837,7 +1837,7 @@ textarea.form-control-style {
 }
 
 .free-started {
-    background-image: url(../images/arrow-bg.svg);
+    background-image: url(../img/arrow-bg.svg);
     background-size: cover;
     background-position: center center;
     padding-top: 76px;
@@ -1919,7 +1919,7 @@ textarea.form-control-style {
 }
 
 .section-stats {
-    background-image: url(../images/bg-stats.jpg);
+    background-image: url(../img/bg-stats.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1992,7 +1992,7 @@ textarea.form-control-style {
 }
 
 .panel-style .panel-heading span {
-    background-image: url(../images/icon-collapse.svg);
+    background-image: url(../img/icon-collapse.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -32px;
@@ -2074,7 +2074,7 @@ textarea.form-control-style {
 }
 
 .icon-quote {
-    background-image: url(../images/icon-quote.svg);
+    background-image: url(../img/icon-quote.svg);
     display: block;
     height: 32px;
     margin-bottom: 30px;
@@ -2088,7 +2088,7 @@ textarea.form-control-style {
 }
 
 .text-reviews h5 span {
-    background-image: url(../images/diagonal-separation.svg);
+    background-image: url(../img/diagonal-separation.svg);
     background-repeat: no-repeat;
     color: #7e8596;
     display: inline-block;
@@ -3477,7 +3477,7 @@ textarea.form-control-style {
 }
 
 .grabbing {
-    cursor: url(../images/grabbing.png) 8 8, move
+    cursor: url(../img/grabbing.png) 8 8, move
 }
 
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
@@ -3540,7 +3540,7 @@ textarea.form-control-style {
 
 .owl-item.loading {
     min-height: 150px;
-    background: url(../images/AjaxLoader.gif) no-repeat center center
+    background: url(../img/AjaxLoader.gif) no-repeat center center
 }
 
 .owl-carousel .owl-wrapper:after {
@@ -3597,7 +3597,7 @@ textarea.form-control-style {
 }
 
 .grabbing {
-    cursor: url(../images/grabbing.png) 8 8, move
+    cursor: url(../img/grabbing.png) 8 8, move
 }
 
 .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
@@ -3660,7 +3660,7 @@ textarea.form-control-style {
 
 .owl-item.loading {
     min-height: 150px;
-    background: url(../images/AjaxLoader.gif) no-repeat center center
+    background: url(../img/AjaxLoader.gif) no-repeat center center
 }
 
 .mfp-bg {
@@ -3805,7 +3805,7 @@ button:-moz-focus-inner {
 
 .mfp-close {
     background-color: #e62b1e;
-    background-image: url(../images/close.svg);
+    background-image: url(../img/close.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 60% 60%;
@@ -4464,7 +4464,7 @@ div.category-item {
 .aparat-hover {
     width: 16px;
     height: 18px;
-    background: url(../images/aparat.png) 0 0;
+    background: url(../img/aparat.png) 0 0;
     transition: all .3s ease;
     bottom: 21px;
     position: absolute
@@ -4472,7 +4472,7 @@ div.category-item {
 
 .aparat-hover:hover {
     cursor: pointer;
-    background: url(../images/aparat.png) 0 -16px;
+    background: url(../img/aparat.png) 0 -16px;
     transition: all .3s ease
 }
 
@@ -4494,7 +4494,7 @@ div.category-item {
 @charset "utf-8";
 .main-slider-black {
     background-color: #e62b1e;
-    background-image: url(../images/bg-stars.svg)
+    background-image: url(../img/bg-stars.svg)
 }
 
 #team-slider p, #team-slider h1 {

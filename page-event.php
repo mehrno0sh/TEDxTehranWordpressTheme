@@ -35,7 +35,7 @@ Template Post Type: page
                     <div class="col-md-12 text-event">
                         <div class="col-md-4">
                             <h5 class="timelineEvent-title text-uppercase"><img
-                                    src="<?php bloginfo('template_directory'); ?>/images/calendar.svg">Date:</h5>
+                                    src="<?php bloginfo('template_directory'); ?>/img/calendar.svg">Date:</h5>
                             <div class="timelineEvent">
                                 <p>
                                     <?php the_field('date') ?>
@@ -44,7 +44,7 @@ Template Post Type: page
                         </div>
                         <div class="col-md-4">
                             <h5 class="timelineEvent-title text-uppercase"><img
-                                    src="<?php bloginfo('template_directory'); ?>/images/clock.svg">Time:</h5>
+                                    src="<?php bloginfo('template_directory'); ?>/img/clock.svg">Time:</h5>
                             <div class="timelineEvent">
                                 <p>
                                     <?php the_field('time') ?>
@@ -53,7 +53,7 @@ Template Post Type: page
                         </div>
                         <div class="col-md-4">
                             <h5 class="timelineEvent-title text-uppercase"><img
-                                    src="<?php bloginfo('template_directory'); ?>/images/map.svg">Address:</h5>
+                                    src="<?php bloginfo('template_directory'); ?>/img/map.svg">Address:</h5>
                             <div class="timelineEvent">
                                 <p>
                                     <?php the_field('address') ?>
@@ -94,19 +94,19 @@ Template Post Type: page
                     <div class="col-md-12">
                         <div class="col-sm-12 col-md-4">
                             <div class="item-join text-center">
-                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/speech.svg"></a>
+                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/speech.svg"></a>
                                 <h5 class="item-join-heading text-uppercase">Nominate a speaker</h5>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="item-join text-center">
-                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/persons.svg"></a>
+                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/persons.svg"></a>
                                 <h5 class="item-join-heading text-uppercase">Nominate for the TED Attend</h5>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4">
                             <div class="item-join text-center">
-                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/hand.svg"></a>
+                                <a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/hand.svg"></a>
                                 <h5 class="item-join-heading text-uppercase">Apply to be a TED Fellow</h5>
                             </div>
                         </div>

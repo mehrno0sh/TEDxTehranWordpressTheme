@@ -13,22 +13,20 @@
     <meta name="description" content="Multipurpose Business Agency/Personal Portfolio" />
 
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-57x57.png">
-	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicons/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicons/favicon.png" type="image/png">
 
 	<!-- Fonts -->
 	<!--
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     -->
-	<link type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/fonts/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css"/>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"/>
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css"/>
+	<!-- Styles -->
+	<link type="text/css" media="all" href="css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!-- JavaScripts -->
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.12.3.min.js" type="text/javascript"></script> 
@@ -43,7 +41,7 @@
 	<div class="container-error vertical-center">
 		<div class="row">
 			<div class="col-md-12 text-center">
-			    <img class="image-404 animated rotateIn" src="<?php bloginfo('template_directory'); ?>/images/illustration_404.svg" alt="404">
+			    <img class="image-404 animated rotateIn" src="<?php bloginfo('template_directory'); ?>/img/illustration_404.svg" alt="404">
 				<h1 class="heading-error animated bounceInUp">404</h1>
 				<p class="message-error text-uppercase animated bounceInUp">Oops! The page you are<br/>looking for not found</p>
 				<p class="animated bounceInUp">Perhaps the page has been deleted or moved.</p>

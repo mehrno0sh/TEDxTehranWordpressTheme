@@ -52,7 +52,7 @@ Template Post Type: page
                         <!-- Item contact -->
                         <div class="col-md-15 col-sm-3">
                             <div class="item-contact text-center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/curation.svg" alt="curation">
+                                <img src="<?php bloginfo('template_directory'); ?>/img/curation.svg" alt="curation">
                                 <h5 class="item-contact-heading text-uppercase">Curation</h5>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ Template Post Type: page
                         <!-- Item contact -->
                         <div class="col-md-15 col-sm-3">
                             <div class="item-contact text-center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/media.svg" alt="media">
+                                <img src="<?php bloginfo('template_directory'); ?>/img/media.svg" alt="media">
                                 <h5 class="item-contact-heading text-uppercase">Media</h5>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ Template Post Type: page
                         <!-- Item contact -->
                         <div class="col-md-15 col-sm-3">
                             <div class="item-contact text-center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/technology.svg" alt="technology">
+                                <img src="<?php bloginfo('template_directory'); ?>/img/technology.svg" alt="technology">
                                 <h5 class="item-contact-heading text-uppercase">Technology</h5>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ Template Post Type: page
                         <!-- Item contact -->
                         <div class="col-md-15 col-sm-3">
                             <div class="item-contact text-center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/partnerships.svg" alt="partnerships">
+                                <img src="<?php bloginfo('template_directory'); ?>/img/partnerships.svg" alt="partnerships">
                                 <h5 class="item-contact-heading text-uppercase">Partnerships</h5>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ Template Post Type: page
                         <!-- Item contact -->
                         <div class="col-md-15 col-sm-3">
                             <div class="item-contact text-center">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/operation.svg" alt="operation">
+                                <img src="<?php bloginfo('template_directory'); ?>/img/operation.svg" alt="operation">
                                 <h5 class="item-contact-heading text-uppercase">Operation</h5>
                             </div>
                         </div>

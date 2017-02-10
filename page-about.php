@@ -126,7 +126,7 @@ Template Post Type: page
 
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <img id="icon-press" class="img-responsive"
-                         src="<?php bloginfo('template_directory'); ?>/images/icon-press.svg" alt="Press">
+                         src="<?php bloginfo('template_directory'); ?>/img/icon-press.svg" alt="Press">
                 </div>
             <?php endwhile; ?>
         </div>

@@ -15,31 +15,20 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="144x144"
-          href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-144x144.png">
+          href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="114x114"
-          href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-114x114.png">
+          href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72"
-          href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-72x72.png">
+          href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="57x57"
-          href="<?php bloginfo('template_directory'); ?>/images/favicons/apple-touch-icon-57x57.png">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicons/favicon.png"
+          href="<?php bloginfo('template_directory'); ?>/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicons/favicon.png"
           type="image/png">
 
-    <!-- Fonts -->
-    <!--
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    -->
-    <link type="text/css" media="all"
-          href="<?php bloginfo('template_directory'); ?>/fonts/font-awesome-4.6.3/css/font-awesome.min.css"
-          rel="stylesheet"/>
-
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/all-styles.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/animate.css"/>
-    <link href="<?php bloginfo('template_directory'); ?>/css/hover-min.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css">
 
     <!-- JavaScripts -->
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.12.3.min.js" type="text/javascript"></script>
@@ -63,7 +52,7 @@
                 <div class="row row-logo">
                     <div class="logo">
                         <a href="<?php echo get_home_url(); ?>">
-                            <img src="<?php bloginfo('template_directory'); ?>/images/TEDx-Logo_240pix_black.png"
+                            <img src="<?php bloginfo('template_directory'); ?>/img/TEDx-Logo_240pix_black.png"
                                  alt="TEDxTehran">
                         </a>
                     </div>

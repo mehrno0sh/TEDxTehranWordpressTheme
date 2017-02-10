@@ -9,10 +9,10 @@
                 <p>Download TEDxTehran App it via official stores:</p>
                 <div class="row" id="main-slider-stores">
                     <div class="col-md-2 col-md-offset-3"><a class="hvr-forward" href="#"><img
-                                src="<?php bloginfo('template_directory'); ?>/images/google-play.png" alt="google-play"></a>
+                                src="<?php bloginfo('template_directory'); ?>/img/google-play.png" alt="google-play"></a>
                     </div>
                     <div class="col-md-5"><a class="hvr-backward" href="#"><img
-                                src="<?php bloginfo('template_directory'); ?>/images/app-store.png" alt="app-store"></a>
+                                src="<?php bloginfo('template_directory'); ?>/img/app-store.png" alt="app-store"></a>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@
         <div class="row">
             <div class="col-md-12">
                 <video id="ted-video-id" width="640" height="360"
-                       poster="<?php bloginfo('template_directory'); ?>/images/Frame-8-1024x576.jpg" controls>
+                       poster="<?php bloginfo('template_directory'); ?>/img/Frame-8-1024x576.jpg" controls>
                     <source src="http://tedxtehran.com/main/wp-content/uploads/2013/08/TEDx-720p-EN_x264.mp4?_=1"
                             type="video/mp4">
                 </video>
@@ -344,7 +344,7 @@
             <div class="col-md-6">
                 <div class="answer-image" data-bottom-top="opacity:0; transform[swing]:scale(0)"
                      data-top="opacity:1; transform[swing]:scale(1)" data-anchor-target=".section-answers"><img
-                        src="<?php bloginfo('template_directory'); ?>/images/illustration-answer.svg" alt="Answers">
+                        src="<?php bloginfo('template_directory'); ?>/img/illustration-answer.svg" alt="Answers">
                 </div>
             </div>
         </div>
