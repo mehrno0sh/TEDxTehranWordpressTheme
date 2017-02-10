@@ -62,51 +62,12 @@
             <div class="col-md-4">
                 <div class="row row-logo">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="<?php echo get_home_url(); ?>">
                             <img src="<?php bloginfo('template_directory'); ?>/images/TEDx-Logo_240pix_black.png"
                                  alt="TEDxTehran">
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8" style="display: none">
-                <nav class="navbar main-nav">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse"
-                                data-target=".navbar-collapse"><span class="icon-bar"></span> <span
-                                class="icon-bar"></span> <span class="icon-bar"></span></button>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
-                                                    href="index.html#">Events <i class="fa fa-angle-down"
-                                                                                 aria-hidden="true"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="event.html">2013</a></li>
-                                    <li><a href="event.html">2014</a></li>
-                                    <li><a href="event.html">2015</a></li>
-                                    <li><a href="event.html">2016</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" data-target="#"
-                                                    href="index.html#">Team <i class="fa fa-angle-down"
-                                                                               aria-hidden="true"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="team.html">2013</a></li>
-                                    <li><a href="team.html">2014</a></li>
-                                    <li><a href="team.html">2015</a></li>
-                                    <li><a href="team.html">2016</a></li>
-                                    <li><a href="team.html">2017</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contacts.html">Blog</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="citizenx.html">CitizenX</a></li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
             <div class="col-md-8">
                 <nav class="navbar main-nav">

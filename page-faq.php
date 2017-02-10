@@ -24,10 +24,10 @@ Template Post Type: page
     <div class="sidebar-section sidebar-section-left">
       <h5 class="sidebar-heading text-uppercase"><span>Categories</span></h5>
       <ul class="list-unstyled list-categories tab-sidebar" role="tablist">
-        <li class="active"><a href="faq.html#TEDx" aria-controls="TEDx" role="tab" data-toggle="tab">Questions about TED and TEDx</a></li>
-        <li><a href="faq.html#AttendingTEDxTehran" aria-controls="AttendingTEDxTehran" role="tab" data-toggle="tab">Attending TEDxTehran</a></li>
-        <li><a href="faq.html#Volunteers" aria-controls="Volunteers" role="tab" data-toggle="tab">Volunteers</a></li>
-        <li><a href="faq.html#Speakers" aria-controls="Speakers" role="tab" data-toggle="tab">Speakers</a></li>
+        <li class="active"><a href="<?php echo get_home_url(); ?>/faq#TEDx" aria-controls="TEDx" role="tab" data-toggle="tab">Questions about TED and TEDx</a></li>
+        <li><a href="<?php echo get_home_url(); ?>/faq#AttendingTEDxTehran" aria-controls="AttendingTEDxTehran" role="tab" data-toggle="tab">Attending TEDxTehran</a></li>
+        <li><a href="<?php echo get_home_url(); ?>/faq#Volunteers" aria-controls="Volunteers" role="tab" data-toggle="tab">Volunteers</a></li>
+        <li><a href="<?php echo get_home_url(); ?>/faq#Speakers" aria-controls="Speakers" role="tab" data-toggle="tab">Speakers</a></li>
       </ul>
     </div>
     <!-- /Categories --> 
@@ -42,7 +42,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions1" href="faq.html#collapse1">What is the difference between TED and TEDx?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions1" href="<?php echo get_home_url(); ?>/faq#collapse1">What is the difference between TED and TEDx?<span></span></a> </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body"> TED conferences are organized and run directly by TED. TEDx events are fully planned and coordinated independently, on a community-by-community basis. The goal of TEDx is to inspire a passion for spreading ideas in local communities from within. </div>
@@ -52,7 +52,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions1" href="faq.html#collapse2">Are you employed by TED?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions1" href="<?php echo get_home_url(); ?>/faq#collapse2">Are you employed by TED?<span></span></a> </h4>
             </div>
             <div id="collapse2" class="panel-collapse collapse">
               <div class="panel-body"> No. While we operate under a license from TED, TEDxTehran is a volunteer-based organization. The organizers and other volunteers donate their time to bring TEDxTehran events to our community. </div>
@@ -69,7 +69,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="faq.html#collapse8">How do I attend a TEDxTehran event?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="<?php echo get_home_url(); ?>/faq#collapse8">How do I attend a TEDxTehran event?<span></span></a> </h4>
             </div>
             <div id="collapse8" class="panel-collapse collapse">
               <div class="panel-body"> We usually ask attendees to apply for a conference Pass.  You may apply for a pass via our website. </div>
@@ -79,7 +79,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="faq.html#collapse9">Why should I request an invitation?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="<?php echo get_home_url(); ?>/faq#collapse9">Why should I request an invitation?<span></span></a> </h4>
             </div>
             <div id="collapse9" class="panel-collapse collapse">
               <div class="panel-body"> TEDx events are generally oversubscribed. We carefully curate our audience so we have   a diverse, creative mix of leading thinkers and doers in our community. We are looking for remarkable people with great stories and ideas worth sharing.
@@ -91,7 +91,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="faq.html#collapse10">How can I request an invitation?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions2" href="<?php echo get_home_url(); ?>/faq#collapse10">How can I request an invitation?<span></span></a> </h4>
             </div>
             <div id="collapse10" class="panel-collapse collapse">
               <div class="panel-body"> In an effort to find a fair way to issue tickets, we ask attendees to request an invitation, using our online form which is usually posted on our website. </div>
@@ -108,7 +108,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions3" href="faq.html#collapse12">How can I become a TEDxTehran volunteer?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions3" href="<?php echo get_home_url(); ?>/faq#collapse12">How can I become a TEDxTehran volunteer?<span></span></a> </h4>
             </div>
             <div id="collapse12" class="panel-collapse collapse">
               <div class="panel-body"> Volunteers are the backbone of any community based event. Volunteers tend to be people who are as passionate as we are about ideas worth spreading. We are always looking for enthusiastic volunteers to help bring TEDxTehran to life. If you’re interested in helping out, we’d love to hear from you. Click here if you would like to volunteer or send your resume to info@tedxtehran.com with Volunteer in the subject. </div>
@@ -125,7 +125,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse15">How do I suggest a speaker?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse15">How do I suggest a speaker?<span></span></a> </h4>
             </div>
             <div id="collapse15" class="panel-collapse collapse">
               <div class="panel-body"> Use our “Nominate a Speaker” form, and fill in as much information as you can. This form goes directly to our speaker selection team. </div>
@@ -135,7 +135,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse16">Can I suggest a speaker that I don't know personally?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse16">Can I suggest a speaker that I don't know personally?<span></span></a> </h4>
             </div>
             <div id="collapse16" class="panel-collapse collapse">
               <div class="panel-body"> Please do! Just let us know how you’ve heard about this person, and why you think they should speak at TEDxTehran. </div>
@@ -145,7 +145,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse17">Can I nominate I work for, or a client of mine?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse17">Can I nominate I work for, or a client of mine?<span></span></a> </h4>
             </div>
             <div id="collapse17" class="panel-collapse collapse">
               <div class="panel-body"> Yes. </div>
@@ -155,7 +155,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse18">Can I suggest myself as a speaker?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse18">Can I suggest myself as a speaker?<span></span></a> </h4>
             </div>
             <div id="collapse18" class="panel-collapse collapse">
               <div class="panel-body"> Yes. </div>
@@ -165,7 +165,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse19">Can I speak at TEDxTehran by becoming a sponsor?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse19">Can I speak at TEDxTehran by becoming a sponsor?<span></span></a> </h4>
             </div>
             <div id="collapse19" class="panel-collapse collapse">
               <div class="panel-body"> No. Sponsoring TEDxTehran has many benefits, but a guaranteed speaking slot is not one of them. </div>
@@ -175,7 +175,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse19">Is there a deadline for suggesting a speaker?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse19">Is there a deadline for suggesting a speaker?<span></span></a> </h4>
             </div>
             <div id="collapse19" class="panel-collapse collapse">
               <div class="panel-body"> We accept nominations all the time. It’s best to get your suggestions to us as early as possible, so we can research them carefully and make the best decision on the speaker roster. </div>
@@ -185,7 +185,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse19">Will it help if I submit multiple nominations, or have my friends nominate me several times?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse19">Will it help if I submit multiple nominations, or have my friends nominate me several times?<span></span></a> </h4>
             </div>
             <div id="collapse19" class="panel-collapse collapse">
               <div class="panel-body"> No. It really only takes one suggestion. </div>
@@ -195,7 +195,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse19">I want to speak at TEDxTehran, but my usual talk runs 50 minutes. Can I get a longer slot?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse19">I want to speak at TEDxTehran, but my usual talk runs 50 minutes. Can I get a longer slot?<span></span></a> </h4>
             </div>
             <div id="collapse19" class="panel-collapse collapse">
               <div class="panel-body"> We strictly enforce the clock for all speakers. TEDxTehran is the place to condense your ideas into a compelling 18-minute talk that communicates your best ideas. We’ve found that a carefully prepared presentation of this length can have astonishing impact. </div>
@@ -205,7 +205,7 @@ Template Post Type: page
           <!-- Item -->
           <div class="panel panel-style">
             <div class="panel-heading">
-              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="faq.html#collapse19">Do you pay the speakers?<span></span></a> </h4>
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#group-questions4" href="<?php echo get_home_url(); ?>/faq#collapse19">Do you pay the speakers?<span></span></a> </h4>
             </div>
             <div id="collapse19" class="panel-collapse collapse">
               <div class="panel-body"> TEDxTehran does not pay speakers. Other benefits include pre-conference coaching and training, special events for networking. We are committed to creating an experience that’s tremendously fulfilling and beneficial on all sides. <br />
@@ -230,7 +230,7 @@ Template Post Type: page
     <div class="col-md-12">
       <div  class="panel panel-style">
       <div id="id-box" class="panel-heading">
-       <h4 class="panel-title"> <a href="contacts.html" target="_blank">Have Questions?<p>Did not find an answer to your question? Ask us in the form below.</p><button id="box-btn" class="btn btn-submit  btn-no-radius disabled" style="pointer-events: all; cursor: pointer;">Send Message</button></a> </h4>
+       <h4 class="panel-title"> <a href="<?php echo get_home_url(); ?>/contact-us" target="_blank">Have Questions?<p>Did not find an answer to your question? Ask us in the form below.</p><button id="box-btn" class="btn btn-submit  btn-no-radius disabled" style="pointer-events: all; cursor: pointer;">Send Message</button></a> </h4>
         </div>
       </div>
     </div>

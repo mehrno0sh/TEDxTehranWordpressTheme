@@ -36,7 +36,7 @@ Template Post Type: page
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="title-section">Nominate the Next CitizenX</h2>
-                    <p class="title-section-details title-section-details-custom">You can nominate the next CitizenX based on <a href="citizenx.html">CitizenX Criteria</a> right here by this form:</p>
+                    <p class="title-section-details title-section-details-custom">You can nominate the next CitizenX based on <a href="<?php echo get_home_url(); ?>/citizenx">CitizenX Criteria</a> right here by this form:</p>
                 </div>
             </div>
             <!-- /Title -->

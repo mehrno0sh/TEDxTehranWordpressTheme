@@ -69,7 +69,7 @@ Template Post Type: page
             <div class="col-md-12">
               <div  class="panel panel-style">
                 <div id="id-box" class="panel-heading">
-                  <h4 class="panel-title"> <a href="nominate-citizenx.html" target="_blank">Who do you want to be?
+                  <h4 class="panel-title"> <a href="nominate-<?php echo get_home_url(); ?>/citizenx" target="_blank">Who do you want to be?
                     <p>Nominate the next CitizenX</p>
                     <button id="box-btn" class="btn btn-submit  btn-no-radius disabled" style="pointer-events: all; cursor: pointer;">Nominate</button>
                     </a> </h4>

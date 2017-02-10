@@ -282,7 +282,7 @@
                     <div class="panel panel-style">
                         <div class="panel-heading active">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
-                                                       href="index.html#collapseOne">About TED<span></span></a></h4>
+                                                       href="<?php echo get_home_url(); ?>#collapseOne">About TED<span></span></a></h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body"> TED is a nonprofit organization devoted to Ideas Worth Spreading.
@@ -298,7 +298,7 @@
                     <div class="panel panel-style">
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
-                                                       href="index.html#collapseTwo">What is TEDx?<span></span></a></h4>
+                                                       href="<?php echo get_home_url(); ?>#collapseTwo">What is TEDx?<span></span></a></h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body"> In the spirit of ideas worth spreading, TED has created a program
@@ -314,7 +314,7 @@
                     <div class="panel panel-style">
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
-                                                       href="index.html#collapseThree">What is TEDxTehran?<span></span></a>
+                                                       href="<?php echo get_home_url(); ?>#collapseThree">What is TEDxTehran?<span></span></a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
@@ -328,7 +328,7 @@
                     <div class="panel panel-style">
                         <div class="panel-heading">
                             <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion"
-                                                       href="index.html#collapseFour">What is
+                                                       href="<?php echo get_home_url(); ?>#collapseFour">What is
                                     TEDxYouth?<span></span></a></h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
