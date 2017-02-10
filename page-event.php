@@ -8,12 +8,14 @@ Template Post Type: page
 <!-- EventsPage -->
 <section class="event-single section-white">
     <!-- Header -->
+    <?php while (have_posts()) : the_post(); ?>
+
     <section class="event-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>TEDxTehran 2016</h1>
-                    <p class="slogan">Good Morning Tehran</p>
+                    <h1><?php the_title(); ?></h1>
+                    <p class="slogan"><?php the_content(); ?></p>
                 </div>
             </div>
         </div>
@@ -22,7 +24,7 @@ Template Post Type: page
     <section class="event-image">
         <div class="container-fluid">
             <div class="row">
-                <img src="<?php bloginfo('template_directory'); ?>/images/eventImage.jpg">
+                <img src="<?php the_field('banner') ?>">
             </div>
         </div>
     </section>
@@ -35,7 +37,7 @@ Template Post Type: page
                         <h5 class="timelineEvent-title text-uppercase"><img src="<?php bloginfo('template_directory'); ?>/images/calendar.svg">Date:</h5>
                         <div class="timelineEvent">
                             <p>
-                                Dec 20, 2016
+                                <?php the_field('date') ?>
                             </p>
                         </div>
                     </div>
@@ -43,14 +45,16 @@ Template Post Type: page
                         <h5 class="timelineEvent-title text-uppercase"><img src="<?php bloginfo('template_directory'); ?>/images/clock.svg">Time:</h5>
                         <div class="timelineEvent">
                             <p>
-                                8:00 AM - 6:00 PM
+                                <?php the_field('time') ?>
                             </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <h5 class="timelineEvent-title text-uppercase"><img src="<?php bloginfo('template_directory'); ?>/images/map.svg">Address:</h5>
                         <div class="timelineEvent">
-                            <p>Vahdat Hall, Tehran, IRAN</p>
+                            <p>
+                                <?php the_field('address') ?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -61,12 +65,13 @@ Template Post Type: page
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6">
-                    <h2 class="title-section title-section-left">Album 2016</h2>
-                    <p class="title-section-details">Tempor incididunt ut labore et dolore magna aliqua. @flicker ad
-                        minim veniam </p>
+                    <h2 class="title-section title-section-left">Album <?php the_field('year') ?></h2>
+                    <p class="title-section-details">
+                        <?php the_field('album_caption') ?>
+                    </p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 text-right">
-                    <a href="#" class="btn btn-big">View All Pictures</a>
+                    <a href="<?php the_field('flicker_link') ?>" class="btn btn-big">View All Pictures</a>
                 </div>
             </div>
         </div>
@@ -111,31 +116,41 @@ Template Post Type: page
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-xs-12 col-md-offset-1">
                     <div class="digits-item">
-                        <h4 class="digit">1007</h4>
+                        <h4 class="digit">
+                            <?php the_field('attendees_count'); ?>
+                        </h4>
                         <span class="digit-name">Attendees</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12 col-xs-12">
                     <div class="digits-item">
-                        <h4 class="digit">807</h4>
+                        <h4 class="digit">
+                            <?php the_field('applications_count'); ?>
+                        </h4>
                         <span class="digit-name">Applications</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12 col-xs-12">
                     <div class="digits-item">
-                        <h4 class="digit">360</h4>
+                        <h4 class="digit">
+                            <?php the_field('talk_view');  ?>
+                        </h4>
                         <span class="digit-name">Views of talks</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12 col-xs-12">
                     <div class="digits-item">
-                        <h4 class="digit">90</h4>
+                        <h4 class="digit">
+                            <?php the_field('volunteers'); ?>
+                        </h4>
                         <span class="digit-name">Volunteers</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12 col-xs-12">
                     <div class="digits-item">
-                        <h4 class="digit">2106</h4>
+                        <h4 class="digit">
+                            <?php the_field('online_views'); ?>
+                        </h4>
                         <span class="digit-name">Online Talk Views</span>
                     </div>
                 </div>
@@ -148,140 +163,65 @@ Template Post Type: page
             <!-- Title -->
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="title-section">TEDxTehran 2016 Talks</h2>
+                    <h2 class="title-section">TEDxTehran <?php the_field('year') ?> Talks</h2>
                     <p class="title-section-details">All TEDxTehran Talks are posted online, giving our community access
                         to showcase and exchange their ideas with the rest of the world</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk1.jpg" alt="event">
+
+                <?php
+                $pages = array(
+                    'post_type' => 'page',
+                    'meta_query' => array(
+                        array(
+                            'key' => '_wp_page_template',
+                            'value' => 'page-speaker.php',
+                        ),
+                        array(
+                            'key' => 'year',
+                            'value' => get_field('year'),
+                        )
+                    ),
+                    'order' => 'asc'
+                );
+
+                $queryObject = new WP_Query($pages);
+
+                ?>
+
+                <?php while ($queryObject->have_posts()) : $queryObject->the_post(); ?>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="talk-item-event">
+                            <div class="cover">
+                                <a class="badge" href="<?php the_permalink(); ?>"></a>
+                                <div class="fit">
+                                    <img class="img-cover" src="<?php the_field('thumbnail') ?>" alt="event">
+                                </div>
                             </div>
-                        </div>
-                        <div class="caption">
-                            <div class="row">
-                                <div class="col-md-6"></div>
-                                <div class="col-md-6"></div>
+                            <div class="caption">
+                                <div class="row">
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-6"></div>
+                                </div>
+                                <h3><a href="#"><?php the_title() ?> </a></h3>
+                                <span class="details"><?php the_field('speaker_info') ?></span>
+                                <span class="details"><?php the_field('speak_title') ?></span>
                             </div>
-                            <h3><a href="#"> Reza Pakravan</a></h3>
-                            <span class="details">CEO at Ariana</span>
-                            <span class="details">Tehran on the Verge of Adventure </span>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk2.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#"> Ramin Sadighi </a></h3>
-                            <span class="details">Market Manager</span>
-                            <span class="details">Tehran on the Verge of True Success</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 hidden-md">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk3.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#"> Dr. Darius Mahdjoubi </a></h3>
-                            <span class="details">Board Member of UT</span>
-                            <span class="details">The New Renaissance</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk4.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#">Dr. Nasrin Hafezparast</a></h3>
-                            <span class="details">Board Member of UT</span>
-                            <span class="details">Breaking Through the Disease Barrier</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk1.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#"> Reza Pakravan</a></h3>
-                            <span class="details">CEO at Ariana</span>
-                            <span class="details">Tehran on the Verge of Adventure</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk2.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#"> Ramin Sadighi </a></h3>
-                            <span class="details"> Market Manager</span>
-                            <span class="details">Tehran on the Verge of True Success</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 hidden-md">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk3.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#"> Dr. Darius Mahdjoubi </a></h3>
-                            <span class="details">Board Member of UT </span>
-                            <span class="details">The New Renaissance</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="talk-item-event">
-                        <div class="cover">
-                            <a class="badge" href="#"></a>
-                            <div class="fit">
-                                <img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/talk4.jpg" alt="event">
-                            </div>
-                        </div>
-                        <div class="caption">
-                            <h3><a href="#">Dr. Nasrin Hafezparast</a></h3>
-                            <span class="details">Board Member of UT</span>
-                            <span class="details">Breaking Through the Disease Barrier</span>
-                        </div>
-                    </div>
-                </div>
+
+                <?php endwhile; ?>
+
             </div>
         </div>
     </section>
-    <!-- Partner -->
+
+    <?php endwhile; ?>
+
+    <?php while (have_posts()) : the_post(); ?>
+        <!-- Partner -->
     <section class="section event-partner">
         <div class="container">
             <!-- Title -->
@@ -327,7 +267,7 @@ Template Post Type: page
                         minim veniam </p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 text-right">
-                    <a href="#" class="btn btn-big btn-white">View Team Members</a>
+                    <a href="<?php the_field('team_page'); ?>" class="btn btn-big btn-white">View Team Members</a>
                 </div>
             </div>
             <!-- /Title -->
@@ -381,6 +321,8 @@ Template Post Type: page
             </div>
         </div>
     </section>
+
+    <?php endwhile; ?>
 </section>
 
 <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i> </a>

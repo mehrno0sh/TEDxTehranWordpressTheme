@@ -5,13 +5,14 @@ Template Post Type: page
 
 <?php get_header(); ?>
 
+<?php while (have_posts()) : the_post(); ?>
 <!-- Slider -->
 <section class="main-slider main-slider-static main-slider-black" id="particles-js"
          data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -200px;">
     <div class="container">
         <div class="row">
             <div id="team-slider" class="col-md-12">
-                <h1 class="text-white">TEDxTehran 2017 Team</h1>
+                <h1 class="text-white"><?php the_title(); ?></h1>
                 <p class="slogan text-white">Welcome to Cascadia. We are called to make their business best. Get started
                     now, your way to success!</p>
                 <div class="clearfix"></div>
@@ -75,6 +76,13 @@ Template Post Type: page
             $args = array(
                 'post_type' => 'team-members',
                 'orderby' => 'menu_order',
+                'meta_query' => array(
+                    array(
+                        'key' => 'events',
+                        'value' => get_field('event'),
+                        'compare' => 'LIKE'
+                    )
+                ),
                 'order' => 'ASC'
             );
             $i = 1;
@@ -118,6 +126,7 @@ Template Post Type: page
         </div>
     </div>
 </section>
+<?php  endwhile; ?>
 <!-- /Team -->
 
 
