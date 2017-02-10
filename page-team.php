@@ -69,27 +69,53 @@ Template Post Type: page
         <!-- /Filter -->
 
         <div class="row grid-progects" style="position: relative; height: 802px;">
-            <!-- Item Person -->
-            <div class="col-sm-6 col-md-4 col-lg-3 team-item team_technology">
-                <div class="item-project item-team">
-                    <div class="cover">
-                        <div class="fit"><img class="img-cover" src="<?php bloginfo('template_directory'); ?>/img/team-1.jpg" alt="John Newman"></div>
-                        <ul class="list-unstyled list-inline social-team">
-                            <li>
-                                <a href="about.html#demo"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="about.html#demo"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="about.html#demo"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a href="about.html#demo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="caption">
-                        <h3>John Newman</h3>
-                        <p class="details text-uppercase">Seo Manager</p>
+
+            <?php
+
+            $args = array(
+                'post_type' => 'team-members',
+                'orderby' => 'menu_order',
+                'order' => 'ASC'
+            );
+            $i = 1;
+            $custom_query = new WP_Query($args);
+            while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+                <!-- Item Person -->
+                <div class="col-sm-6 col-md-4 col-lg-3 team-item <?php echo implode(' ',get_field("teams")); ?>">
+                    <div class="item-project item-team">
+                        <div class="cover">
+                            <div class="fit"><img class="img-cover" src="<?php the_field("photo"); ?>" alt="<?php the_title(); ?>"></div>
+                            <ul class="list-unstyled list-inline social-team">
+                                <?php if(!empty(get_field('twitter'))) { ?>
+                                <li>
+                                    <a href="<?php the_field("twitter"); ?>">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <?php } ?>
+
+                                <?php if(!empty(get_field('linkedin'))) { ?>
+                                    <li>
+                                        <a href="<?php the_field("linkedin"); ?>">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                        <div class="caption">
+                            <h3><?php the_title(); ?></h3>
+                            <p class="details text-uppercase"><?php the_field("role"); ?></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- /Item Person -->
+                <!-- /Item Person -->
+
+                <?php $i++; ?>
+            <?php endwhile; ?>
+
+
             <!-- Item Person -->
             <div class="col-sm-6 col-md-4 col-lg-3 team-item team_technology">
                 <div class="item-project item-team">

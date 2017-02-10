@@ -39,26 +39,22 @@ function create_social_link()
 add_action('init', 'create_social_link');
 
 
-function create_speakers()
+function create_team_members()
 {
-    register_post_type('speakers',
+    register_post_type('team-members',
         array(
             'labels' => array(
-                'name' => __('Speakers'),
-                'singular_name' => __('Speaker'),
+                'name' => __('Team Members'),
+                'singular_name' => __('Team Member'),
             ),
             'public' => true,
             'has_archive' => true,
             'supports' => array(
                 'title',
-                'editor',
-                'revisions',
-                'thumbnail',
-                'page-attributes'
             )
         ));
 }
 
-add_action('init', 'create_speakers');
+add_action('init', 'create_team_members');
 
 add_theme_support( 'title-tag' );
