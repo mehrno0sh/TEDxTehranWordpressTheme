@@ -53,15 +53,33 @@
             </div>
         </div>
 
-        <!--2015-->
+        <?php
+        $events = array(
+            'post_type' => 'page',
+            'meta_query' => array(
+                array(
+                    'key' => '_wp_page_template',
+                    'value' => 'page-event.php',
+                )
+            ),
+            'order' => 'asc'
+        );
+
+        $eventsQueryObject = new WP_Query($events);
+
+        ?>
+
+        <?php while ($eventsQueryObject->have_posts()) : $eventsQueryObject->the_post(); ?>
+
+            <?php $year = get_field('year'); ?>
         <div class="row">
             <div class="col-md-12">
-                <h2>2015</h2>
+                <h2><?php echo $year; ?></h2>
             </div>
         </div>
         <div class="row">
             <?php
-            $pages = array(
+            $speakers = array(
                 'post_type' => 'page',
                 'meta_query' => array(
                     array(
@@ -70,13 +88,13 @@
                     ),
                     array(
                         'key' => 'year',
-                        'value' => '2015',
+                        'value' => $year,
                     )
                 ),
                 'order' => 'asc'
             );
 
-            $queryObject = new WP_Query($pages);
+            $queryObject = new WP_Query($speakers);
 
             ?>
 
@@ -113,134 +131,8 @@
 
             <?php endwhile; ?>
         </div>
-        <!--/2015-->
 
-
-        <!--2014-->
-        <div class="row">
-            <div class="col-md-12">
-                <h2>2014</h2>
-            </div>
-        </div>
-        <div class="row">
-            <?php
-            $pages = array(
-                'post_type' => 'page',
-                'meta_query' => array(
-                    array(
-                        'key' => '_wp_page_template',
-                        'value' => 'page-speaker.php',
-                    ),
-                    array(
-                        'key' => 'year',
-                        'value' => '2014',
-                    )
-                ),
-                'order' => 'asc'
-            );
-
-            $queryObject = new WP_Query($pages);
-
-            ?>
-
-            <?php while ($queryObject->have_posts()) : $queryObject->the_post(); ?>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="item-project item-team talk-hover">
-                        <div class="cover">
-                            <div class="fit">
-                                <a href="<?php the_permalink(); ?>" target="_blank">
-                                    <img class="img-cover" src="<?php the_field('thumbnail') ?>"
-                                         alt="<?php the_title() ?>">
-                                </a>
-                            </div>
-                            <ul class="list-unstyled list-inline social-team">
-                                <li>
-                                    <a target="_blank" href="<?php the_field('youtube_url') ?>">
-                                        <i class="fa fa-youtube youtube-hover" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="<?php the_field('aparat_url') ?>">
-                                        <div class="aparat-hover"></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="caption">
-                            <h3><?php the_title() ?></h3>
-                            <p class="details text-uppercase"><?php the_field('speak_title') ?></p>
-                        </div>
-                    </div>
-                </div>
-
-            <?php endwhile; ?>
-        </div>
-        <!--/2014-->
-
-        <!--2013-->
-        <div class="row">
-            <div class="col-md-12">
-                <h2>2013</h2>
-            </div>
-        </div>
-        <div class="row">
-            <?php
-            $pages = array(
-                'post_type' => 'page',
-                'meta_query' => array(
-                    array(
-                        'key' => '_wp_page_template',
-                        'value' => 'page-speaker.php',
-                    ),
-                    array(
-                        'key' => 'year',
-                        'value' => '2013',
-                    )
-                ),
-                'order' => 'asc'
-            );
-
-            $queryObject = new WP_Query($pages);
-
-            ?>
-
-            <?php while ($queryObject->have_posts()) : $queryObject->the_post(); ?>
-
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                    <div class="item-project item-team talk-hover">
-                        <div class="cover">
-                            <div class="fit">
-                                <a href="<?php the_permalink(); ?>" target="_blank">
-                                    <img class="img-cover" src="<?php the_field('thumbnail') ?>"
-                                         alt="<?php the_title() ?>">
-                                </a>
-                            </div>
-                            <ul class="list-unstyled list-inline social-team">
-                                <li>
-                                    <a target="_blank" href="<?php the_field('youtube_url') ?>">
-                                        <i class="fa fa-youtube youtube-hover" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="<?php the_field('aparat_url') ?>">
-                                        <div class="aparat-hover"></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="caption">
-                            <h3><?php the_title() ?></h3>
-                            <p class="details text-uppercase"><?php the_field('speak_title') ?></p>
-                        </div>
-                    </div>
-                </div>
-
-            <?php endwhile; ?>
-        </div>
-        <!--/2013-->
-
-
+        <?php endwhile; ?>
 
 </section>
 <!-- /Talks -->
