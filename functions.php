@@ -98,6 +98,11 @@ add_action('init', 'create_press');
 add_theme_support( 'title-tag' );
 
 register_nav_menus( array(
-    'primary' => __( 'Primary Menu',      'tedxtehranseventeen' ),
+    'primary' => __( 'Primary Menu', 'tedxtehranseventeen' ),
     'footer'  => __( 'Footer Menu', 'tedxtehranseventeen' ),
 ) );
+
+
+
+
+require_once('wp_bootstrap_navwalker.php');
